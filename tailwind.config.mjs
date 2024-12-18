@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,11 +9,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        cairo: ["var(--font-cairo)", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        colors: {
+          "background-color": "rgb(135, 117, 78)",
+          "secondary-color": "rgb(161, 161, 159)",
+          "main-color": "rgb(135, 117, 77)",
+          "text-color": "rgb(53, 62, 56)",
+          "image-color": "rgb(136, 118, 78)",
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-rtl")],
 };
