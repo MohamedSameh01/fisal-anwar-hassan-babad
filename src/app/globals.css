@@ -9,7 +9,10 @@
   box-sizing: border-box;
   
 }
-
+::selection {
+  background-color: #726343; /* Your desired background color */
+  color: #ffffff; /* Optional: Change the text color */
+}
  :root {
   
     font-family: var(--font-cairo), sans-serif;

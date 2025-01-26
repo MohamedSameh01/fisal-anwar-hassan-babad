@@ -1,0 +1,21 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d4a327; /* Arrow color */
+  /* background-color: rgba(0, 0, 0, 0.5); Background color */
+  width: 40px; /* Arrow width */
+  height: 40px; /* Arrow height */
+  border-radius: 50%; /* Make arrows circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* Arrow icon size */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Hover background color */
+}

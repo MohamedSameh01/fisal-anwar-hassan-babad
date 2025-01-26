@@ -1,9 +1,21 @@
-import Image from "next/image";
+
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Achivements from "./components/Achivements";
+import FieldsOfWork from "./components/FieldsOfWork";
+import Contactus from "./components/Contactus";
+import CeoMessage from "./components/CeoMessage";
 
 export default function Home() {
+  
   return (
-    <section className="h-screen ">
-        <h1 className="text-center text-2xl">home page</h1>
+    <section>
+     <Hero/>
+     <About/>
+     <CeoMessage/>
+     <Achivements/>
+     <FieldsOfWork/>
+     <Contactus/>
     </section>
   );
 }

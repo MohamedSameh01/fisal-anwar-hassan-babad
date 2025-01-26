@@ -19,6 +19,8 @@ export default {
           "main-color": "rgb(135, 117, 77)",
           "text-color": "rgb(53, 62, 56)",
           "image-color": "rgb(136, 118, 78)",
+          "footer-background": "rgb(52, 61, 55)",
+          "sections-background": "rgb(242, 240, 237)",
         },
       },
     },
